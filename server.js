@@ -9,9 +9,9 @@ var cheerio = require("cheerio");
 
 var db = require("./models");
 
-var PORT = process.env.PORT || 3000;
+//var PORT = process.env.PORT || 3000;
 var app = express();
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scrapePOST";
 app.use(logger("dev"));
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
@@ -24,7 +24,7 @@ app.set("view engine", "handlebars");
 // Configure middleware
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/scrapePOST", { 
+mongoose.connect(MONGODB_URI, { 
   useUnifiedTopology: true,
   useNewUrlParser: true });
 
