@@ -9,9 +9,10 @@ var cheerio = require("cheerio");
 
 var db = require("./models");
 
-//var PORT = process.env.PORT || 3000;
-var app = express();
+var PORT = process.env.PORT || 3000;
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scrapePOST";
+var app = express();
+
 app.use(logger("dev"));
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
