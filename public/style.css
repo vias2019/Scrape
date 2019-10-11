@@ -1,0 +1,15 @@
+h1 {
+    margin-left: 35%;
+}
+#scrape {
+    margin-left: 40%;
+}
+body{
+    background-image: url("image.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+a{
+  padding: 15px;  
+  text-decoration: underline;
+}
