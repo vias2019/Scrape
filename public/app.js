@@ -14,7 +14,7 @@ $(document).ready(function () {
     //   console.log(data);
 
     // });
-    window.location.href = "http://localhost:3000/scrape";
+    window.location.href = "/scrape";
    
   });
 

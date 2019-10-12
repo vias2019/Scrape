@@ -5,7 +5,7 @@ var path = require('path');
 var exphbs =require('express-handlebars');
 var axios = require("axios");
 var cheerio = require("cheerio");
-
+require('.env').config();
 
 var db = require("./models");
 
