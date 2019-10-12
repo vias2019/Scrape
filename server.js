@@ -53,7 +53,7 @@ app.get("/scrape", function(req, res) {
         results.push({
             title: title,
             summary: summary,
-            link: link,
+            link: ("www.nytimes.com"+link),
             ifNewArticle: true
         });
         }
